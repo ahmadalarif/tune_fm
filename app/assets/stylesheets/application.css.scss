@@ -1,4 +1,4 @@
-$light: #ffffff;
+$white: #FFFFFF;
 $highlight: #EE7964;
 $dark: #2C3135;
 $light: #EDEFF5;
@@ -9,7 +9,7 @@ $light: #EDEFF5;
 
 body {
   font-family: ‘Lato’, sans-serif;
-  background: $light;
+  background: $white;
 }
 
 .wrapper_wide {
@@ -42,7 +42,7 @@ body {
 }
 
 .button {
-  color: $light;
+  color: $white;
   text-decoration: none;
   font-size: 1rem;
   padding: 1rem 2rem;
@@ -65,17 +65,17 @@ body {
 }
 
 .button_white {
-  background: $light;
+  background: $white;
   color: $dark;
   transition: background .4s ease-in-out;
   &:hover {
-   background: darken($light, 7.5%);
+   background: darken($white, 7.5%);
   }
 }
 
 #main_header {
   color: $dark;
-  background: $light;
+  background: $white;
   padding: 2.5rem 0;
   #logo {
     float: left;
@@ -118,7 +118,7 @@ body {
     font-size: 3rem;
     font-weight: 300;
     letter-spacing: 1px;
-    color: $light;
+    color: $white;
   }
 }
 
@@ -161,7 +161,7 @@ body {
     color: $dark;
     &:hover {
       background: $highlight;
-      color: $light;
+      color: $white;
     }
   }
   .disabled {
@@ -172,13 +172,13 @@ body {
   }
   .current {
     background: $highlight;
-    color: $light;
+    color: $white;
   }
 }
 
 #form {
   padding: 3rem 3.5%;
-  background: $light;
+  background: $white;
   border-radius: .35rem;
   .title {
     color: $dark;
