@@ -15,6 +15,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'listen', '~> 3.2'
 gem 'spring-watcher-listen', '~> 2.0.0'
+gem 'devise', '~> 4.7', '>= 4.7.3'
+gem 'sdoc', group: :doc
 
 
 
@@ -33,7 +35,6 @@ group :development do
 end
 
 group :production do
-  
   gem 'pg'
   gem 'rails_12factor'
 end
