@@ -17,6 +17,7 @@ gem 'listen', '~> 3.2'
 gem 'spring-watcher-listen', '~> 2.0.0'
 gem 'devise', '~> 4.7', '>= 4.7.3'
 gem 'sdoc', group: :doc
+gem 'will_paginate', '~> 3.3'
 
 
 

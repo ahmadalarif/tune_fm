@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_20_201252) do
+ActiveRecord::Schema.define(version: 2020_10_21_144302) do
+
+  create_table "episodes", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.integer "podcast_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["podcast_id"], name: "index_episodes_on_podcast_id"
+  end
 
   create_table "podcasts", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -29,4 +38,5 @@ ActiveRecord::Schema.define(version: 2020_10_20_201252) do
     t.index ["reset_password_token"], name: "index_podcasts_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "episodes", "podcasts"
 end
