@@ -30,7 +30,7 @@
 					<li class="cf">
 						<div class="episode_thumbnail">
 							<a href="#">
-								<%= image_tag episode.episode_thumbnail.url(:medium) %>
+								<img src="images/pieter_levels.png" alt="Pieter Levels">
 							</a>
 						</div>
 						<div class="episode_overview">
@@ -40,7 +40,6 @@
 					</li>
 				<% end %>
 			</ul>
-
 			<%= will_paginate @episodes, previous_label: "Previous", next_label: "Next" %>
 		</div>
 	</div>
