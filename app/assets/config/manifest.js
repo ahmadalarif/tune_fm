@@ -3,4 +3,4 @@
 //= link application.css.scss
 //
 // maybe another non-standard file?
-//= link podcasts.css.scss
+//= link _podcasts.css.scss
