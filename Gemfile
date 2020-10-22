@@ -18,6 +18,8 @@ gem 'spring-watcher-listen', '~> 2.0.0'
 gem 'devise', '~> 4.7', '>= 4.7.3'
 gem 'sdoc', group: :doc
 gem 'will_paginate', '~> 3.3'
+gem 'paperclip', '~> 6.1'
+gem 'aws-sdk'
 
 
 
