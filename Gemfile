@@ -9,7 +9,7 @@ gem 'puma', '~> 4.1'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier'
 gem 'coffee-rails'
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 4.4'
 gem 'webpacker', '~> 4.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
@@ -20,6 +20,7 @@ gem 'sdoc', group: :doc
 gem 'will_paginate', '~> 3.3'
 gem 'paperclip', '~> 4.2.1'
 gem 'aws-sdk', '< 2.0'
+gem 'font-awesome-sass', '~> 5.15.1'
 
 
 

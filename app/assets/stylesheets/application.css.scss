@@ -41,6 +41,20 @@ body {
   clear: both;
 }
 
+#notice_wrapper {
+  width: 100%;
+  position: absolute;
+  background: rgba(208,203,82,.85);
+  z-index: 999;
+  p {
+    color: $white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 1.5rem 0;
+  }
+}
+
 .button {
   color: $white;
   text-decoration: none;
@@ -212,6 +226,8 @@ textarea {
  *= require_self
  *= require custom
  */
-// @import 'normalize';
-@import '_welcome';
-@import '_podcasts';
+@import 'normalize';
+@import 'welcome';
+@import 'podcasts';
+@import "font-awesome-sprockets";
+@import "font-awesome";

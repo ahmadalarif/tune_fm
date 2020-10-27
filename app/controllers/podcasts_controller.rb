@@ -3,7 +3,7 @@ class PodcastsController < ApplicationController
 	before_action :find_episode, only: [:show, :dashboard]
 
 	def index
-		@podcasts = Podcast.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 12)
+		@podcasts = Podcast.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 5)
 	end
 
   def show
