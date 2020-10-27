@@ -36,10 +36,10 @@
         <div class="jp-type-single">
           <div class="jp-gui jp-interface">
             <ul class="jp-controls">
-              <li><a href="javascript:;" class="jp-play" tabindex="1">&#61515;</a></li>
-              <li><a href="javascript:;" class="jp-pause" tabindex="1">&#61516;</a></li>
-              <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">&#61480;</a></li>
-              <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">&#61478;</a></li>
+              <li><a href="javascript:;" class="jp-play" tabindex="1"><i class="fas fa-play"></i></a></li>
+              <li><a href="javascript:;" class="jp-pause" tabindex="1"><i class="fas fa-pause"></i>
+              <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute"><i class="fas fa-volume-off"></i></a></li>
+              <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute"><i class="fas fa-volume-mute"></i></a></li>
             </ul>
 
             <div class="jp-progress">
@@ -47,7 +47,6 @@
                 <div class="jp-play-bar"></div>
               </div>
             </div>
-
             <div class="jp-time-holder">
               <div class="jp-current-time"></div>
             </div>
@@ -73,9 +72,9 @@
 				<% @episodes.each do |episode| %>
 					<li class="cf">
 						<div class="episode_thumbnail">
-							<a href="episode.html">
+							
 								<%= image_tag episode.episode_thumbnail.url(:medium) %>
-							</a>
+							
 						</div>
 						<div class="episode_overview">
 							<h2><%= link_to episode.title, podcast_episode_path(@podcast, episode) %></h2>
@@ -88,3 +87,16 @@
 	</div>
 </div>
 
+<script>
+	$(document).ready(function(){
+	  $("#jquery_jplayer_1").jPlayer({
+	    ready: function () {
+	      $(this).jPlayer("setMedia", {
+	        mp3: "<%= @episode.mp3.url %>",
+	      });
+	    },
+	    swfPath: "/js",
+	    supplied: "mp3"
+	  });
+	});
+</script>

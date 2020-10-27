@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_22_210502) do
+ActiveRecord::Schema.define(version: 2020_10_26_105212) do
 
   create_table "episodes", force: :cascade do |t|
     t.string "title"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2020_10_22_210502) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "episode_thumbnail_file_name"
     t.string "episode_thumbnail_content_type"
-    t.bigint "episode_thumbnail_file_size"
+    t.integer "episode_thumbnail_file_size"
     t.datetime "episode_thumbnail_updated_at"
     t.string "mp3_file_name"
     t.string "mp3_content_type"

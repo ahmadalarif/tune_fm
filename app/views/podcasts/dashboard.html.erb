@@ -1,14 +1,18 @@
 <%= render 'layouts/header'; %>
-
 <div id="podcast_show">
   <div id="show_banner">
+  <% if podcast_signed_in? %>
+  <h2 class="welcome">Welcome, <%= @podcast.email %></h2>
+  <% end %>
+  
     <div class="wrapper_skinny">
+    
       <h1><%= @podcast.title %></h1>
     </div>
   </div>
-
   <div id="links">
     <div class="wrapper_skinny">
+    
       <ul>
         <li class="current">Episodes</li>
         <li><%= link_to "New Episode", new_podcast_episode_path(@podcast) %></li>
@@ -17,9 +21,11 @@
       </ul>
     </div>
   </div>
+  
 
   <div id="episodes">
     <div class="wrapper_skinny">
+    
       <ul class="cf">
         <% @episodes.each do |episode| %>
           <li class="cf">
