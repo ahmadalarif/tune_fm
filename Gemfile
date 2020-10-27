@@ -21,7 +21,6 @@ gem 'will_paginate', '~> 3.3'
 gem 'paperclip', '~> 4.2.1'
 gem 'aws-sdk', '< 2.0'
 gem 'font-awesome-sass', '~> 5.12'
-gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 
 
 
