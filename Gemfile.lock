@@ -56,6 +56,8 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
       zeitwerk (~> 2.2, >= 2.2.2)
+    autoprefixer-rails (10.0.1.0)
+      execjs
     aws-sdk (1.67.0)
       aws-sdk-v1 (= 1.67.0)
     aws-sdk-v1 (1.67.0)
@@ -68,6 +70,9 @@ GEM
       msgpack (~> 1.0)
     bootsnap (1.4.8-java)
       msgpack (~> 1.0)
+    bootstrap-sass (3.4.1)
+      autoprefixer-rails (>= 5.2.1)
+      sassc (>= 2.0.0)
     builder (3.2.4)
     byebug (11.1.3)
     climate_control (0.2.0)
@@ -267,10 +272,11 @@ PLATFORMS
 DEPENDENCIES
   aws-sdk (< 2.0)
   bootsnap (>= 1.4.2)
+  bootstrap-sass (~> 3.4, >= 3.4.1)
   byebug
   coffee-rails
   devise (~> 4.7, >= 4.7.3)
-  font-awesome-sass (~> 5.15.1)
+  font-awesome-sass (~> 5.12)
   jbuilder (~> 2.7)
   jquery-rails (~> 4.4)
   listen (~> 3.2)

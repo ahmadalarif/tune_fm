@@ -222,12 +222,12 @@ textarea {
   height: 8rem;
 }
 /*
- *= require_tree
- *= require_self
  *= require custom
  */
 @import 'normalize';
-@import 'welcome';
+@import "welcome";
 @import 'podcasts';
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import "bootstrap-sprockets";
+@import "bootstrap";
