@@ -20,12 +20,8 @@ gem 'sdoc', group: :doc
 gem 'will_paginate', '~> 3.3'
 gem 'paperclip', '~> 4.2.1'
 gem 'aws-sdk', '< 2.0'
-<<<<<<< HEAD
-gem 'font-awesome-sass', '~> 5.12'
-=======
 gem 'font-awesome-sass', '~> 5.15.1'
 
->>>>>>> bc1c48241931cc21ebb0938953ecd616b6ec9961
 
 
 
