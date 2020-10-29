@@ -34,6 +34,6 @@ User able to sign out
 
 * Deployment instructions
  Deployed on Heroku so application is live on the web
-# tune-fm App
+# tune-FM App
 Direct Link
 https://whispering-shelf-44451.herokuapp.com/
